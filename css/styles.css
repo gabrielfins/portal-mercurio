@@ -86,6 +86,7 @@ button {
   background-color: #ffffff;
   transition: all .3s;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .side-nav-content {

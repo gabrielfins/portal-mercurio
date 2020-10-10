@@ -26,7 +26,7 @@ function toggleNavbar() {
     sideNav.style.visibility = 'collapse';
     sideNav.style.width = '0';
     darkOverlay.style.visibility = 'collapse';
-    document.body.style.overflow = 'scroll';
+    document.body.style.overflow = 'auto';
     toggleNav = !toggleNav;
   }
 }
