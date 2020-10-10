@@ -1,12 +1,24 @@
 var toggleNav = false;
 
+window.onresize = function resize() {
+  if (window.innerWidth <= 370) {
+    sideNav.style.width = '100%';
+  } else {
+    sideNav.style.width = '370px';
+  }
+}
+
 function toggleNavbar() {
   let sideNav = document.getElementById('sideNav');
   let darkOverlay = document.getElementById('darkOverlay');
 
   if (toggleNav === false) {
     sideNav.style.visibility = 'visible';
-    sideNav.style.width = '370px';
+    if (window.innerWidth <= 370) {
+      sideNav.style.width = '100%';
+    } else {
+      sideNav.style.width = '370px';
+    }
     darkOverlay.style.visibility = 'visible';
     document.body.style.overflow = 'hidden';
     toggleNav = !toggleNav;

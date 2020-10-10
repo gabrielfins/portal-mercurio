@@ -179,7 +179,6 @@ button {
 
 .news-img {
   height: 200px;
-  width: 266px;
 }
 
 .news-info {
@@ -256,6 +255,10 @@ figcaption {
     margin: 0 auto;
   }
 
+  figure {
+    margin: 0;
+  }
+
   figure img {
     width: 100%;
   }
@@ -268,5 +271,22 @@ figcaption {
 @media only screen and (max-width: 550px){
   .main-content {
     padding: 20px 30px 60px 30px;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .main-content {
+    padding: 20px 30px 60px 30px;
+  }
+
+  .news-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .cathegory-news a, .link {
+    white-space: normal;
   }
 }
