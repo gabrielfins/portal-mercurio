@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<title>Portal Mercúrio</title>
+</head>
+
+<body>
+	<div id="sideNav" class="side-nav">
+		<div class="side-nav-content">
+			<a style="margin: 0;" class="link" href="index.html">Início</a>
+			<h3>Categorias</h3>
+			<div class="divider"></div>
+			<button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+			<div id="culturaNews" class="cathegory-news">
+				<a href="cultura1.html">30 anos de Rock in Rio</a>
+				<a href="cultura2.html">História do cinema brasileiro</a>
+			</div>
+			<button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+			<div id="economiaNews" class="cathegory-news">
+				<a href="economia1.html">Automação e desemprego</a>
+				<a href="economia2.html">Receita de senhoriagem</a>
+			</div>
+			<button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+			<div id="educacaoNews" class="cathegory-news">
+				<a href="educacao1.html">UFRJ - Vestibular 2020</a>
+				<a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+			</div>
+			<button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+			<div id="esportesNews" class="cathegory-news">
+				<a href="esporte1.html">Maracanã sem cadeiras</a>
+				<a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+			</div>
+			<button data-target="internacionalNews" onclick="toggleCathegory()"
+				class="side-nav-btn">Internacional</button>
+			<div id="internacionalNews" class="cathegory-news">
+				<a href="internacional1.html">O céu vermelho da indonésia</a>
+				<a href="internacional2.html">Alemanha e reflorestamento</a>
+			</div>
+			<button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+			<div id="politicaNews" class="cathegory-news">
+				<a href="politica1.html">Bolsonaro na ONU</a>
+				<a href="politica2.html">Discussão no congresso</a>
+			</div>
+			<button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+			<div id="saudeNews" class="cathegory-news">
+				<a href="saude1.html">Inteligência artificial na saúde</a>
+				<a href="saude2.html">Cura do câncer</a>
+			</div>
+			<button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+			<div id="tecnologiaNews" class="cathegory-news">
+				<a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+				<a href="tecnologia2.html">Tecnologia na medcina</a>
+			</div>
+			<div style="margin-top: 5px;" class="divider"></div>
+			<a class="link" href="root/index.html">Versão original</a>
+		</div>
+	</div>
+	<div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+	<nav class="nav-bar">
+		<div class="nav-wrapper">
+			<button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+					alt="menu"></button>
+			<a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+			<span class="menu-btn"></span>
+		</div>
+	</nav>
+	<div class="main-content">
+		<h1>Discurso de Bolsonaro na ONU</h1>
+		<div class="divider"></div>
+		<p>O presidente Jair Bolsonaro fez seu primeiro discurso de abertura na Assembleia Geral da ONU nesta
+			terça-feira (24). Ele falou sobre sobre preservação meio ambiente e acusou líderes estrangeiros de ataque à
+			soberania do Brasil. Também chamou de "falácia" afirmação de que Amazônia é patrimônio da humanidade.</p>
+		<h2 class="section-title">Segue um trecho das palavras dele:</h2>
+		<p>"Apresento aos senhores um novo Brasil, que ressurge depois de estar à beira do socialismo. Um Brasil que
+			está sendo reconstruído a partir dos anseios e dos ideais de seu povo. No meu governo, o Brasil vem
+			trabalhando para reconquistar a confiança do mundo, diminuindo o desemprego, a violência e o risco para os
+			negócios, por meio da desburocratização, da desregulamentação e, em especial, pelo exemplo. Meu país esteve
+			muito próximo do socialismo, o que nos colocou numa situação de corrupção generalizada, grave recessão
+			econômica, altas taxas de criminalidade e de ataques ininterruptos aos valores familiares e religiosos que
+			formam nossas tradições."</p>
+		<figure>
+			<img draggable="false" src="img/bolsonaro.jpg">
+			<figcaption> Bolsonaro na ONU</figcaption>
+		</figure>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

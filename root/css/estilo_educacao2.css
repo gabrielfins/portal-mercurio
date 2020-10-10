@@ -1,0 +1,45 @@
+body {
+	 color :#333333;
+     font-family: "lucida Sans Unicode", "lucida Grande", sans-serif;
+     margin-left: auto;
+     margin-right: auto;
+     width: 940px;
+     padding: 20px;
+     background: #ccffff;
+     border: 1px solid #d6d6c2;
+}
+h1{
+	background-image: url(../img/sobre-background.jpg);
+	padding: 10px;
+
+}
+h2{
+	border-bottom: 2px solid #333;
+	margin-top: 30px;
+}
+figure{
+	background-image: #f2eded;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 15px;
+
+}
+figcaption{
+	font-style: italic;
+}
+p{
+
+	text-indent: 15px;
+
+}
+
+#instituto-de-tecnologia-da-california-ucla{
+	margin-left: auto;
+	margin-right: auto;
+	width: 650px;
+}
+
+#casal-de-filantropos{
+	margin: 0 10px 10px 0;
+	float: left;
+}

@@ -1,0 +1,87 @@
+h1{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	text-align: center;
+	border:thin solid;
+	width:500px;
+	height:120px;
+	line-height: 60px;
+	background-color:#DCDCDC;
+}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	color: #333;
+	font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;
+	height: auto;
+	background: #aaa;
+	margin-top:0;
+	margin-bottom: -20px;
+}
+.artigo{
+	width: 1100px;
+	margin-top:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 0;
+	background:white;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+p{
+	text-indent:15px;
+
+
+}
+h4{
+	text-indent:15px;
+	margin-right:auto;
+	margin-top:auto;
+	text-align: center;
+	height:auto;
+	line-height: 25px;
+	position: relative;
+	width:auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	color:#696969;
+
+}
+
+#floresta{
+	margin-left: auto;
+	margin-right: auto;
+	width:600px;
+	height:auto;
+	 
+}
+figure{
+	background-color: #f2eded;
+	border:1px solid #ccc;
+	text-align: center;
+}
+
+figcaption{
+	font-style: italic;
+}
+
+	img{
+	margin-right: 30px;
+	vertical-align: middle;
+	width: 500px;
+	padding-top: 30px;
+}
+
+#suicidio{
+	margin-left: auto;
+	margin-right: auto;
+	width:600px;
+	height:auto;
+}
+#suicidioo{
+	margin-left: auto;
+	margin-right: auto;
+	width:600px;
+	height:auto;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Portal Mercúrio</title>
+</head>
+
+<body>
+    <div id="sideNav" class="side-nav">
+        <div class="side-nav-content">
+            <a style="margin: 0;" class="link" href="index.html">Início</a>
+            <h3>Categorias</h3>
+            <div class="divider"></div>
+            <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+            <div id="culturaNews" class="cathegory-news">
+                <a href="cultura1.html">30 anos de Rock in Rio</a>
+                <a href="cultura2.html">História do cinema brasileiro</a>
+            </div>
+            <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+            <div id="economiaNews" class="cathegory-news">
+                <a href="economia1.html">Automação e desemprego</a>
+                <a href="economia2.html">Receita de senhoriagem</a>
+            </div>
+            <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+            <div id="educacaoNews" class="cathegory-news">
+                <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+                <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+            </div>
+            <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+            <div id="esportesNews" class="cathegory-news">
+                <a href="esporte1.html">Maracanã sem cadeiras</a>
+                <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+            </div>
+            <button data-target="internacionalNews" onclick="toggleCathegory()"
+                class="side-nav-btn">Internacional</button>
+            <div id="internacionalNews" class="cathegory-news">
+                <a href="internacional1.html">O céu vermelho da indonésia</a>
+                <a href="internacional2.html">Alemanha e reflorestamento</a>
+            </div>
+            <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+            <div id="politicaNews" class="cathegory-news">
+                <a href="politica1.html">Bolsonaro na ONU</a>
+                <a href="politica2.html">Discussão no congresso</a>
+            </div>
+            <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+            <div id="saudeNews" class="cathegory-news">
+                <a href="saude1.html">Inteligência artificial na saúde</a>
+                <a href="saude2.html">Cura do câncer</a>
+            </div>
+            <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+            <div id="tecnologiaNews" class="cathegory-news">
+                <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+                <a href="tecnologia2.html">Tecnologia na medcina</a>
+            </div>
+            <div style="margin-top: 5px;" class="divider"></div>
+            <a class="link" href="root/index.html">Versão original</a>
+        </div>
+    </div>
+    <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+                    alt="menu"></button>
+            <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+            <span class="menu-btn"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>Universidade de Los Angeles cria instituto para estudar a bondade</h1>
+        <div class="divider"></div>
+        <figure>
+            <img draggable="false" src="img/UCLA.jpg" alt="Foto da Universidade da California">
+            <figcaption>Universidade da Califórnia (UCLA)</figcaption>
+        </figure>
+        <p>Estudiosos já trabalham para desenhar as bases de trabalho do instituto, que é pioneiro na área. Filantropos
+            dos EUA doaram US$ 20 milhões para a fundação do centro.</p>
+        <p>Ajudar um colega do trabalho, ficar atento a um vizinho idoso ou dar a passagem para alguém em um
+            engarrafamento. Estes atos de gentileza serão o foco do novo instituto que a universidade <a
+                class="link-wrapper"
+                href="https://g1.globo.com/tudo-sobre/instituto-de-tecnologia-da-california-ucla/">UCLA</a> de Los
+            Angeles, nos <a class="link-wrapper" href="https://g1.globo.com/tudo-sobre/estados-unidos/">EUA</a>, vai
+            inaugurar.
+        </p>
+        <p>Este centro, o primeiro do tipo, terá como objetivo empoderar cidadãos e inspirar líderes a construírem
+            sociedades mais humanas através do estudo de atos, pensamentos, sentimentos e instituições sociais
+            associadas à bondade.</p>
+        <p><a class="link-wrapper"
+                href="https://g1.globo.com/educacao/noticia/2019/09/23/mec-envia-oficio-as-escolas-publicas-para-melhorar-ambiente-de-ensino-e-combater-doutrinacao-e-propaganda-partidaria.ghtml">MEC
+                envia ofício às escolas para 'melhorar ambiente' e combater 'doutrinação'</a></p>
+        <p><a class="link-wrapper"
+                href="https://g1.globo.com/educacao/noticia/2019/09/19/uso-excessivo-de-tecnologia-pode-afetar-capacidade-das-criancas-de-escrever-avaliam-professores.ghtml">Uso
+                excessivo de tecnologia pode afetar crianças, avaliam professores</a></p>
+        <p>"Em meio à atual política mundial, à violência e aos conflitos, o Instituto da Bondade Bedari da UCLA busca
+            ser um antídoto", disse Darnell Hunt, decano da divisão de ciências sociais, onde o instituto terá sua sede.
+        </p>
+        <h2 class="section-title">Sobre o instituto</h2>
+        <p>Estudiosos já trabalham para desenhar as bases de trabalho do instituto que recebeu uma doação de US$ 20
+            milhões dos filantropos norte-americanos Jennifer e Matthew C. Harris através da Fundação Bedari.</p>
+        <p>"Nossa visão é que todosvivamos em um mundo onde a humanidade descubra e pratique a bondade que existe em
+            todos nós", disse Matthew Harris, cofundador do centro. "É preciso muita pesquisa para entender porque a
+            bondade pode ser tão escassa no mundo moderno".</p>
+        <figure>
+            <img draggable="false" src="img/CASAL.jpg" alt="Foto do casal de filantropos">
+            <figcaption>O casal de filantropos Jennifer e Matthew C. Harris doou US$ 20 milhões em
+                apoio a pesquisas para a criação de sociedades mais humanas — Foto: Divulgação/UCLA</figcaption>
+        </figure>
+        <p>Uma série de pesquisadores da universidade estuda este tema que é a base do instituto. Segundo a UCLA, os
+            antropólogos da instituição, em estudos recentes, observam como a bondade se espalha de pessoa para pessoa e
+            de grupo para grupo.</p>
+        <p>Por sua parte, sociólogos da UCLA têm trabalhos que analisam como as pessoas que agem regularmente de maneira
+            cruel podem ser encorajadas a se envolver em atos bondosos. O instituto de psicologia tem pesquisas sobre
+            como a bondade pode melhorar o humor das pessoas e reduzir os sintomas de depressão.</p>
+        <p>Na saúde, experimentos avaliam como as mudanças na neurobiologia e nos comportamentos resultantes do
+            mindfullness podem influenciar a bondade e o bem-estar mental, físico e social das pessoas.</p>
+        <p>Estudos científicos já demonstraram no passado que a bondade beneficia enormemente a saúde física e mental
+            das pessoas.</p>
+        <p class="source-text">Fonte: <a class="link-wrapper"
+                href="https://g1.globo.com/educacao/noticia/2019/09/25/universidade-de-los-angeles-cria-instituto-para-estudar-a-bondade.ghtml">g1.globo.com</a>
+        </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

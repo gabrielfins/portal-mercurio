@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Portal Mercúrio</title>
+</head>
+
+<body>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+      <div id="culturaNews" class="cathegory-news">
+        <a href="cultura1.html">30 anos de Rock in Rio</a>
+        <a href="cultura2.html">História do cinema brasileiro</a>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+      <div id="economiaNews" class="cathegory-news">
+        <a href="economia1.html">Automação e desemprego</a>
+        <a href="economia2.html">Receita de senhoriagem</a>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+      <div id="educacaoNews" class="cathegory-news">
+        <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+        <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+      <div id="esportesNews" class="cathegory-news">
+        <a href="esporte1.html">Maracanã sem cadeiras</a>
+        <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCathegory()" class="side-nav-btn">Internacional</button>
+      <div id="internacionalNews" class="cathegory-news">
+        <a href="internacional1.html">O céu vermelho da indonésia</a>
+        <a href="internacional2.html">Alemanha e reflorestamento</a>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+      <div id="politicaNews" class="cathegory-news">
+        <a href="politica1.html">Bolsonaro na ONU</a>
+        <a href="politica2.html">Discussão no congresso</a>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+      <div id="saudeNews" class="cathegory-news">
+        <a href="saude1.html">Inteligência artificial na saúde</a>
+        <a href="saude2.html">Cura do câncer</a>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+      <div id="tecnologiaNews" class="cathegory-news">
+        <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+        <a href="tecnologia2.html">Tecnologia na medcina</a>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="root/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <span class="menu-btn"></span>
+    </div>
+  </nav>
+  <div class="main-content">
+    <h1>Veja os brasileiros que já estão classificados para a Olimpíada de Tóquio 2020</h1>
+    <div class="divider"></div>
+    <p>País tem 106 vagas asseguradas no megaevento do próximo ano; Ana Marcela Cunha é o principal nome já garantido.
+    </p>
+    <figure>
+      <img draggable="false" src="img/joaomenezes.jpg" alt="João Menezes na final do Pan em Lima">
+      <figcaption> João Menezes</figcaption>
+    </figure>
+    <p>A menos de um ano do início dos Jogos Olímpicos de Tóquio, no Japão, o Brasil já tem 104 vagas confirmadas para a
+      disputa do megaevento - o COB (Comitê Olímpico nacional) estima que o país terá cerca de 250 atletas
+      representantes na Ásia.</p>
+    <p>O número será próximo do contingente enviado para os Jogos Olímpicos de Londres, em 2012. Para aquela edição, a
+      COB mandou 259 competidores. Nos Jogos do Rio, a delegação teve 462 atletas inscritos, mas o número foi inflado
+      pelo fato de o Brasil ser o país-sede.</p>
+    <p>Na maioria dos esportes, os nomes ainda não estão garantidos, mas o Brasil já tem classificação assegurada em
+      Tóquio. São os casos de quatro esportes coletivos femininos (rúgbi, handebol, futebol e vôlei) e dos revezamentos
+      masculinos da natação. Em outras modalidades, alguns atletas estão praticamente certos, casos de Robert Scheidt, a
+      dupla Martine Grael/Kahena Kunze e Jorge Zarif, todos eles da vela, além de Ieda Guimarães, do pentatlo.</p>
+    <p>As exceções são a nadadora Ana Marcela Cunha, que obteve vaga nominal ao ficar em quinto lugar na prova dos 10km
+      no Campeonato Mundial de Esportes Aquáticos de Gwangju (Coreia do Sul), em julho de 2019 - as dez primeiras
+      colocadas se classificavam -, e o tenista João Menezes, que precisará estar entre os 300 melhores do ranking
+      mundial na véspera dos Jogos de Tóquio para ratificar a vaga.</p>
+    <p>No atletismo, alguns atletas já atingiram o índice olímpico, mas como a CBAt (Confederação Brasileira de
+      Atletismo) ainda não definiu o critério de classificação, os nomes não estão contabilizados. No judô, por exemplo,
+      esporte que mais deu medalhas olímpicas para o Brasil, a definição dos atletas se dá pelo ranking mundial que será
+      consolidado no primeiro semestre de 2020.</p>
+    <p id="topicos">Saiba quais são as vagas brasileiras já conquistadas:
+      <p class="list-title"><b>Futebol feminino</b></p>
+      <p>18 atletas</p>
+      <p>• Vaga conseguida com o título da Copa América, em abril de 2018.</p>
+      <p class="list-title"><b>Rúgbi feminino</b></p>
+      <p>12 atletas</p>
+      <p>• Vaga obtida após vitória em torneio pré-olímpico em Lima, em junho de 2019.</p>
+      <p class="list-title"><b>Vôlei feminino</b></p>
+      <p>12 atletas</p>
+      <p>• Vaga conquistada ao vencer o Pré-Olímpico disputado contra Camarões e República Dominicana em julho de 2019.
+      </p>
+      <p class="list-title"><b>Vôlei masculino</b></p>
+      <p>12 atletas</p>
+      <p>• Vaga conquistada com vitória sobre a Bulgária em Pré-Olímpico em agosto de 2019.</p>
+      <p class="list-title"><b>Handebol feminino</b></p>
+      <p>14 atletas</p>
+      <p>• Vaga obtida com o título nos Jogos Pan-Americanos de Lima, no Peru, em agosto de 2019.</p>
+      <p class="list-title"><b>Natação</b></p>
+      <p>12 nadadores (4 revezamento 4x100m livre, 4 revezamento 4x200m livre e 4 revezamento 4x100m medley, todos
+        masculinos); país pode levar até dois reservas por cada prova</p>
+      <p>• Vagas obtidas durante o Campeonato Mundial de Esportes Aquáticos de Gwangju, na Coreia do Sul, em julho de
+        2019.</p>
+      <p class="list-title"><b>Águas abertas</b></p>
+      <p>Ana Marcela Cunha (10km)</p>
+      <p>• Vaga conquistada após a quinta posição na distância no Campeonato Mundial de Esportes Aquáticos de Gwangju,
+        em julho de 2019.</p>
+      <p class="list-title"><b>Vela</b></p>
+      <p>10 velejadores (classes 49erFX, 49er, 470 feminino, Laser, Finn e Nacra 17)</p>
+      <p>• Vagas vieram desde o Mundial da Dinamarca, em 2018, no Campeonato Europeu e nos Jogos Pan-Americanos de Lima,
+        em 2019.</p>
+      <p class="list-title"><b>Pentatlo moderno</b></p>
+      <p>Ieda Guimarães</p>
+      <p>• Vaga obtida com a quarta colocação nos Jogos Pan-Americanos de Lima, no Peru, em agosto de 2019.</p>
+      <p class="list-title"><b>Hipismo</b></p>
+      <p>9 atletas (adestramento, CCE e saltos por equipes)</p>
+      <p>• Vagas conquistadas após medalhas nos Jogos Pan-Americanos de Lima, em agosto de 2019.</p>
+      <p class="list-title"><b>Tênis</b></p>
+      <p>João Menezes (desde que esteja entre os 300 do ranking mundial em junho do ano que vem)</p>
+      <p>• Vaga conquistada nos Jogos Pan-Americanos de Lima, no Peru, em agosto de 2019.</p>
+      <p class="list-title"><b>Tênis de mesa</b></p>
+      <p>1 atleta (provavelmente Hugo Calderano)</p>
+      <p>• Vaga assegurada com o título de Calderano nos Jogos Pan-Americanos de Lima, no Peru, em agosto de 2019.</p>
+      <p class="list-title"><b>Tiro com arco</b></p>
+      <p>1 atleta</p>
+      <p>• Vaga conquistada com a prata de Marcus Vinícius d'Almeida nos Jogos Pan-Americanos de Lima, no Peru, em
+        agosto de 2019.</p>
+      <p class="list-title"><b>Canoagem de velocidade</b></p>
+      <p>2 atletas (C2 1.000m)</p>
+      <p>• Vagas conquistadas com pódios no Mundial de Szeged, na Hungria, em agosto de 2019.</p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

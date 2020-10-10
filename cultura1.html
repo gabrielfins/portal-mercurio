@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Portal Mercúrio</title>
+</head>
+
+<body>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+      <div id="culturaNews" class="cathegory-news">
+        <a href="cultura1.html">30 anos de Rock in Rio</a>
+        <a href="cultura2.html">História do cinema brasileiro</a>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+      <div id="economiaNews" class="cathegory-news">
+        <a href="economia1.html">Automação e desemprego</a>
+        <a href="economia2.html">Receita de senhoriagem</a>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+      <div id="educacaoNews" class="cathegory-news">
+        <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+        <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+      <div id="esportesNews" class="cathegory-news">
+        <a href="esporte1.html">Maracanã sem cadeiras</a>
+        <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCathegory()" class="side-nav-btn">Internacional</button>
+      <div id="internacionalNews" class="cathegory-news">
+        <a href="internacional1.html">O céu vermelho da indonésia</a>
+        <a href="internacional2.html">Alemanha e reflorestamento</a>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+      <div id="politicaNews" class="cathegory-news">
+        <a href="politica1.html">Bolsonaro na ONU</a>
+        <a href="politica2.html">Discussão no congresso</a>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+      <div id="saudeNews" class="cathegory-news">
+        <a href="saude1.html">Inteligência artificial na saúde</a>
+        <a href="saude2.html">Cura do câncer</a>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+      <div id="tecnologiaNews" class="cathegory-news">
+        <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+        <a href="tecnologia2.html">Tecnologia na medcina</a>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="root/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <span class="menu-btn"></span>
+    </div>
+  </nav>
+  <div class="main-content">
+    <h1>30 Anos de Rock in Rio</h1>
+    <div class="divider"></div>
+    <h2>Introdução</h2>
+    <p>Entre 11 e 20 de janeiro de 1985, num terreno alagadiço de 250 mil metros quadrados em Jacarepaguá (o equivalente
+      a 12 Maracanãs) , no Rio de Janeiro, cerca de 1,4 milhão de pessoas viram aquele que seria o maior festival de
+      rock do País até hoje. Era um momento de grande simbolismo na vida do País: no mesmo dia do show da banda carioca
+      Barão Vermelho, havia sido eleito Tancredo Neves, o primeiro presidente civil após 21 anos de ditadura.</p>
+    <p>Durante dez dias, 14 artistas internacionais e 15 atrações nacionais se apresentaram num ritual de lama e paz &
+      amor. Mas não foi fácil realizar o negócio: o empresário <b>Roberto Medina</b> conta que, logo após fazer o show
+      de Sinatra, foi a Nova York com o seu projeto de um megafestival de rock na América Latina e conta que cansou de
+      bater na porta de empresários do ramo do show business. “Fiquei 40 dias em Nova York e não consegui nada.” Levou
+      negativas de 200 empresários. Até que solicitou ajuda ao manager de Sinatra, <b>Luis Soto</b>, que pediu que ele
+      marcasse um coquetel em sua suíte de hotel para 30 pessoas. Enviou jornalistas de todos os grandes jornais
+      americanos, que publicaram com destaque a iniciativa do brasileiro. “Aí, meu amigo, no dia seguinte tinha fila na
+      porta do meu apartamento”, lembra. “Fechei o cast em dois dias.”</p>
+    <p>Naquele ano de 1985, <b>Freddie Mercury</b>, do Queen, ficou tão impressionado com o entusiasmo do público que,
+      durante a canção Love of my life, decidiu reger a plateia em uma cena que se tornou mítica na história do
+      rock’n’roll.</p>
+    <p>A banda australiana AC/DC foi inflexível em pelo menos uma exigência: só tocaria no Brasil se pudesse trazer um
+      gigantesco sino de 1,5 tonelada, usado na música Hell's Bells. A produção do Rock in Rio aceitou o desafio e
+      trouxe o sino de navio. Mas aconteceu o que ninguém esperava: o palco não suportava o peso do sino. No fim, o
+      AC/DC subiu no palco com uma réplica de gesso, uma improvisação feita da produção do festival. Na mesma edição,
+      <b>Ozzy Osbourne</b> levou a torcida do Flamengo à loucura ao subir ao palco com uma camisa do Zico.</p>
+    <p>O Iron Maiden fez seu primeiro show na América Latina no Rock in Rio, em 1985. A banda subiu ao palco às 23h58
+      (uma referência à canção Two minutes to midnight) e fez um dos shows mais históricos da banda e do festival, com a
+      presença do Eddie, o monstro de estimação do grupo.</p>
+    <figure>
+      <img draggable="false" src="img/rock-in-rio.jpg" alt="Primeiro Rock in Rio">
+      <figcaption>Primeiro Rock in Rio</figcaption>
+    </figure>
+    <h2>O início de tudo</h2>
+    <p>Maior circo do rock do mundo, o Rock in Rio completa 30 anos hoje. Há três décadas, ele instaurava em terras
+      tropicais, pela primeira vez, aquela simbologia de zona franca de liberdade, música e amor que tinha sido gestada
+      em Woodstock. Sua canção-tema, criada como um jingle publicitário (“Se a vida começasse agora/ e o mundo fosse
+      nosso outra vez/ e a gente não parasse mais de cantar, de sonhar...”), globalizou-se, virou chiclete nas bocas de
+      brasileiros, portugueses e espanhóis e agora vai também aos Estados Unidos.</p>
+    <p>Nos primeiros 20 anos, o Rock in Rio se tornaria também o primeiro festival a adotar e expandir a noção de
+      franchising e “shoppingcenterização” dos megaeventos musicais. Em uma trajetória de êxito, o festival protagonizou
+      histórias de ressurreição e nascimento, glorificação ou despedida no seio da mitologia musical. <b>James
+        Taylor</b> renasceu duas vezes no Rock in Rio. Os Paralamas do Sucesso e o Barão Vermelho nasceram no palco do
+      festival, e o Brasil acompanhou seus partos. Shows memoráveis de <b>Queen</b>, <b>AC/DC</b>, <b>Ozzy</b>,
+      <b>Santana</b>, <b>Joe Cocker</b>, <b>Judas Priest</b>, <b>Bruce Springsteen</b>, <b>Neil Young</b> e
+      <b>Metallica</b> erigiram suas fundações.</p>
+    <p>Reputações foram erguidas (como a do Queens of the Stone Age) e famas foram demolidas (como a de Britney) em seus
+      palcos. O grupo B52’s, que foi atração do primeiro Rock in Rio, em 1985, até hoje guarda boas lembranças de seu
+      batismo nos trópicos. “Foi mágico, aquele foi um dos nossos maiores shows. Lembro de voar de helicóptero em volta
+      do Corcovado, uma maravilha”, lembrou a cantora <i>Kate Pierson</i>.</p>
+    <figure>
+      <img draggable="false" src="img/artistas.jpg" alt="Artistas">
+      <figcaption>Artistas</figcaption>
+    </figure>
+    <p>Fonte: <a class="link"
+        href="https://infograficos.estadao.com.br/especiais/rock-in-rio-30-anos">infograficos.estadao.com.br</a>
+    </p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Portal Mercúrio</title>
+</head>
+
+<body>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+      <div id="culturaNews" class="cathegory-news">
+        <a href="cultura1.html">30 anos de Rock in Rio</a>
+        <a href="cultura2.html">História do cinema brasileiro</a>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+      <div id="economiaNews" class="cathegory-news">
+        <a href="economia1.html">Automação e desemprego</a>
+        <a href="economia2.html">Receita de senhoriagem</a>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+      <div id="educacaoNews" class="cathegory-news">
+        <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+        <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+      <div id="esportesNews" class="cathegory-news">
+        <a href="esporte1.html">Maracanã sem cadeiras</a>
+        <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCathegory()" class="side-nav-btn">Internacional</button>
+      <div id="internacionalNews" class="cathegory-news">
+        <a href="internacional1.html">O céu vermelho da indonésia</a>
+        <a href="internacional2.html">Alemanha e reflorestamento</a>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+      <div id="politicaNews" class="cathegory-news">
+        <a href="politica1.html">Bolsonaro na ONU</a>
+        <a href="politica2.html">Discussão no congresso</a>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+      <div id="saudeNews" class="cathegory-news">
+        <a href="saude1.html">Inteligência artificial na saúde</a>
+        <a href="saude2.html">Cura do câncer</a>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+      <div id="tecnologiaNews" class="cathegory-news">
+        <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+        <a href="tecnologia2.html">Tecnologia na medcina</a>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="root/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <span class="menu-btn"></span>
+    </div>
+  </nav>
+  <div class="main-content">
+    <h1>Maracanã sem cadeiras? Projeto carece de estudos e execução é inviável em curto prazo</h1>
+    <div class="divider"></div>
+    <figure>
+      <img draggable="false" src="img/maracana4.jpg" alt="Maracanã">
+      <figcaption>Estádio do maracanã pode ter volta da geral</figcaption>
+    </figure>
+    <h2>Votação na Alerj aprova retorno da geral no estádio. Indefinição de permissionário e falta de estudos sobre
+      impacto estrutural, no entanto, inviabilizam novidade antes de 2021, no mínimo</h2>
+    <p>Uma medida popular, mas de execução complexa e demorada. A aprovação do projeto de lei 4.260/18 na Assembleia
+      Legislativa do Estado do Rio de Janeiro (Alerj), nesta terça-feira, deixou os torcedores do Flamengo em polvorosa.
+      É bom deixar claro, porém, que a possibilidade de retirada de cadeiras do Maracanã é algo previsto para uma
+      realidade bem distante. A indefinição do gestor do estádio e, principalmente, questões estruturais são entraves
+      para o "retorno da geral".</p>
+    <p>Em termos práticos, a aprovação do projeto somente diminui a burocracia caso a ideia seja levada adiante no
+      futuro. O texto segue agora para sanção ou veto do governador. Tudo passa, porém, pela definição de um
+      permissionário para o estádio que Flamengo e Fluminense gerem em caráter provisório. Passado este passo, caso quem
+      assuma definitivamente o Maracanã tenha o desejo de criar setores populares, há a necessidade de um longo estudo
+      para avaliar se o projeto é exequível.</p>
+    <p>Vamos por etapas: é necessário um estudo, a formatação de um projeto, a aprovação do projeto pelos órgãos
+      competentes, um orçamento, a abertura de licitação para obra e, por fim, a execução da mesma. Como se não
+      bastasse, o Maracanã precisaria ser fechado (ou ao menos setores determinados) por um longo período. Ou seja, é
+      inviável vislumbrar setores Norte e Sul sem cadeiras antes de 2021, no mínimo.</p>
+    <p>- Tem que ter licitação, tomada de preço, projeto, etc... Não houve nenhum estudo econômico financeiro. Vamos
+      voltar com a geral? É legal, é bacana, mas é algo que fica no ar. Não é uma pequena obra de engenharia e tudo isso
+      foi explicado - relata o diretor geral do Maracanã na gestão do Flamengo, Severiano Braga.</p>
+    <p> O representante rubro-negro esteve em audiência pública na Alerj no último dia 5 de setembro para tratar do
+      tema, que contou também com o coronel Rodrigo Fernandes Polito, do Corpo de Bombeiros. Responsável por medidas de
+      segurança, ele deixou claro se tratar de obra grandiosa, com mudanças estruturais no estádio, como a ampliação do
+      número de banheiros, bares, ampliação de corredores e instalação de barreiras anti-esmagamento.</p>
+    <figure>
+      <img draggable="false" src="img/maracana.jpg" alt="Maracanã">
+      <figcaption>Estádio do maracanã está sobre administração da dupla fla-flu até 15 de outubro</figcaption>
+    </figure>
+    <p>Para retirada de cadeiras que permitiriam o aumento da capacidade do Maracanã, será preciso também alteração nos
+      acessos ao estádio nos setores afetados, mudança na altura dos degraus para evitar acidentes (os atuais são acima
+      do previsto por conta das cadeiras), avaliação estrutural para "avalanches", já que o espaço não foi construído
+      para que torcedores ficassem subindo e descendo constantemente, entre outros pontos.</p>
+    <p>- O oficial dos bombeiros já explicou que o projeto do Maracanã foi feito para uma determinada demanda de
+      pessoas. Não é simplesmente chegar e retirar as cadeiras. Nos perguntaram na Alerj se o Flamengo é a favor de um
+      setor popular. Sim, mas é preciso avaliar e entender de que maneira - disse Severiano Braga.</p>
+    <p>O diretor geral do estádio alertou ainda para os custos da obra e o período em que o Maracanã ficaria fechado
+      para execução da mesma. "Quem vai pagar esta conta?".</p>
+    <p>Paralelamente a toda questão da volta ou não da geral, o Flamengo vive a expectativa de continuar como
+      permissionário do Maracanã por mais seis meses. O acordo com o Governo do Estado do Rio de Janeiro se encerra no
+      próximo dia 15 de outubro e não há definição sobre a continuidade. A renovação por mais 180 dias não é automática
+      e depende do não surgimento de empresas interessadas em assumir o estádio.</p>
+    <p>Até o próximo dia de 10 outubro, o governo precisa se manifestar a respeito do tema. A tendência e expectativa
+      dos clubes é de que ninguém do setor privado se posicione no sentido de assumir a gestão. Desta maneira, a
+      permissão de uso emergencial seria renovada para Flamengo e Fluminense por mais seis meses.</p>
+    <p>Independentemente do desfecho do imbróglio, no entanto, os jogos previstos para Flamengo e Fluminense até o final
+      da temporada estão garantidos sob a gestão dos mesmos. O Rubro-Negro, por exemplo, já vendeu pacotes de ingressos
+      até o término do Brasileirão.</p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

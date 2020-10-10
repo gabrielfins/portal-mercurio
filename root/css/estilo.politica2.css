@@ -1,0 +1,23 @@
+img{
+	width: 400px;
+	height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+body{
+	width:800px;
+	max-height: auto;
+	margin:auto;
+	text-align:center;
+}
+h1{
+	border-bottom: 2px solid red;
+}
+h3{
+	border-bottom: 2px solid red;
+}
+figure{
+	background-color: gray;
+}

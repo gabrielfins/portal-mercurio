@@ -1,0 +1,38 @@
+body {
+	 color :#333333;
+     font-family: "arial", sans-serif;
+     margin-left: auto;
+     margin-right: auto;
+     width: 940px; 
+     padding: 20px;
+     background: #ffffe6;  
+     border: 1px solid #d6d6c2;
+} 
+h1{
+	text-align: center;
+	padding: 10px;
+	color: blue;
+
+}
+h2{
+	color: blue;
+	padding: 5px;
+}
+
+figure{
+	background-image: #f2eded;
+	border: 5px solid #ccc;
+	text-align: center;
+	padding: 1px;
+
+}
+figcaption{
+	font-style: italic; 
+}
+p{
+	text-align: left;
+	text-indent: 15px;
+	font-size: 16px;
+
+}
+

@@ -1,0 +1,28 @@
+#titulo{
+	border:0;
+	font-size: 40px;
+	font-family: monospace;
+	color: #363636;
+}
+
+h1{
+font-family: "Courier New";
+color:#483D8B;
+border-bottom: 4px solid #808080;
+border-radius: 5px;
+}
+
+body{
+	background-color:#DCDCDC;
+	background-size: cover;
+	margin: auto;
+	width: 900px;
+
+}
+
+img{
+	text-align: center;
+	width:900px;
+	height: auto;
+	border-radius: 15px;
+}

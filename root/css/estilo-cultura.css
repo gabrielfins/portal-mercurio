@@ -1,0 +1,44 @@
+
+body{
+	margin-left: auto;
+	margin-right: auto;
+	width: 940px;
+	border: 1px solid #AAAAAA;
+	background: #FF7C7C;
+}
+figure{
+	margin-top: 30px;
+	background-color:#F6F6F6;
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+	padding: 15px;
+	border: 1px solid black;
+}
+h1{
+	margin-top: 5px;
+	padding: 10px;
+	text-align: center;
+	background-color: #DCDCDC;
+}
+h2{
+	border-bottom: 2px solid #333;
+	margin-top: 40px;
+}
+img{
+	width: 100%;
+}
+#rock-in-rio{
+	margin-left: auto;
+	margin-right: auto;
+	width: 520px;
+}
+#artistas{
+	margin-left: auto;
+	margin-right: auto;
+	width: 320px;
+}
+#conteudo{
+	background: white;
+		padding: 20px;
+	}

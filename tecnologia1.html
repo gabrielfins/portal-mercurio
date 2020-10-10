@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Portal Mercúrio</title>
+</head>
+
+<body>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+      <div id="culturaNews" class="cathegory-news">
+        <a href="cultura1.html">30 anos de Rock in Rio</a>
+        <a href="cultura2.html">História do cinema brasileiro</a>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+      <div id="economiaNews" class="cathegory-news">
+        <a href="economia1.html">Automação e desemprego</a>
+        <a href="economia2.html">Receita de senhoriagem</a>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+      <div id="educacaoNews" class="cathegory-news">
+        <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+        <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+      <div id="esportesNews" class="cathegory-news">
+        <a href="esporte1.html">Maracanã sem cadeiras</a>
+        <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCathegory()" class="side-nav-btn">Internacional</button>
+      <div id="internacionalNews" class="cathegory-news">
+        <a href="internacional1.html">O céu vermelho da indonésia</a>
+        <a href="internacional2.html">Alemanha e reflorestamento</a>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+      <div id="politicaNews" class="cathegory-news">
+        <a href="politica1.html">Bolsonaro na ONU</a>
+        <a href="politica2.html">Discussão no congresso</a>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+      <div id="saudeNews" class="cathegory-news">
+        <a href="saude1.html">Inteligência artificial na saúde</a>
+        <a href="saude2.html">Cura do câncer</a>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+      <div id="tecnologiaNews" class="cathegory-news">
+        <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+        <a href="tecnologia2.html">Tecnologia na medcina</a>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="root/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <span class="menu-btn"></span>
+    </div>
+  </nav>
+  <div class="main-content">
+    <h1>iPhone 11: Apple confirma data de lançamento para o Brasil</h1>
+    <div class="divider"></div>
+    <figure>
+      <img draggable="false" src="img/iphone.jpg" alt="Iphone11">
+    </figure>
+    <p>A <b>Apple</b> confirmou a data de lançamento dos <b>iPhones 11</b>, <b>11 Pro</b> e <b>11 Pro Max</b> para o
+      mercado brasileiro. Os três dispositivos serão vendidos por aqui a partir do dia 18 de outubro. Contudo, é
+      possível que operadoras e varejistas parceiras da Apple comecem uma pré-venda ou mesmo criem uma lista de espera
+      com interessados nos novos dispositivos alguns dias antes.</p>
+    <p>Essa última geração de iPhones foi apresentada oficialmente pela Maçã em um evento nos EUA no início deste mês.
+      As vendas internacionais começaram na última sexta-feira (20) na terra-natal da companhia e em vários outros
+      mercados.</p>
+    <p>O lançamento no Brasil, apesar de não estar sincronizado com o dos principais mercados da empresa, está sendo o
+      mais rápido para a Apple até agora. Em gerações anteriores dos iPhones, a Maçã chegou a vender seus produtos por
+      aqui alguns meses depois de disponibilizá-los no exterior. Dessa vez, entretanto, teremos apenas quatro semanas de
+      atraso no lançamento por aqui.</p>
+    <h2 class="section-title">Compatibilidade 4G</h2>
+    <p>Os iPhones 11 vendidos no Brasil serão os mesmos modelos disponibilizados na Europa, aqueles que já foram
+      <b>homologados pela Anatel</b>. É importante frisar isso porque, caso você resolva importar um iPhone 11, 11 Pro
+      ou 11 Pro Max dos EUA, ele não vai funcionar em todas as bandas do <b>4G</b> brasileiro.</p>
+    <p>"Estamos muito animados em trazer a nova dual-câmera do iPhone 11, bem como a do iPhone 11 Pro e iPhone 11 Pro
+      Max, uma nova linha Pro para iPhone, que oferece a mais avançada performance para clientes do Brasil", disse a
+      companhia.</p>
+    <p>Os preços dos novos iPhones no Brasil ainda não foram revelados.</p>
+    <p class="source-text">Fonte: <a class="link"
+        href="https://www.tecmundo.com.br/dispositivos-moveis/146259-iphone-11-apple-confirma-data-lancamento-brasil.htm">tecmundo.com.br</a>
+    </p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

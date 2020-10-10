@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Portal Mercúrio</title>
+</head>
+
+<body>
+    <div id="sideNav" class="side-nav">
+        <div class="side-nav-content">
+            <a style="margin: 0;" class="link" href="index.html">Início</a>
+            <h3>Categorias</h3>
+            <div class="divider"></div>
+            <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+            <div id="culturaNews" class="cathegory-news">
+                <a href="cultura1.html">30 anos de Rock in Rio</a>
+                <a href="cultura2.html">História do cinema brasileiro</a>
+            </div>
+            <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+            <div id="economiaNews" class="cathegory-news">
+                <a href="economia1.html">Automação e desemprego</a>
+                <a href="economia2.html">Receita de senhoriagem</a>
+            </div>
+            <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+            <div id="educacaoNews" class="cathegory-news">
+                <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+                <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+            </div>
+            <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+            <div id="esportesNews" class="cathegory-news">
+                <a href="esporte1.html">Maracanã sem cadeiras</a>
+                <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+            </div>
+            <button data-target="internacionalNews" onclick="toggleCathegory()"
+                class="side-nav-btn">Internacional</button>
+            <div id="internacionalNews" class="cathegory-news">
+                <a href="internacional1.html">O céu vermelho da indonésia</a>
+                <a href="internacional2.html">Alemanha e reflorestamento</a>
+            </div>
+            <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+            <div id="politicaNews" class="cathegory-news">
+                <a href="politica1.html">Bolsonaro na ONU</a>
+                <a href="politica2.html">Discussão no congresso</a>
+            </div>
+            <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+            <div id="saudeNews" class="cathegory-news">
+                <a href="saude1.html">Inteligência artificial na saúde</a>
+                <a href="saude2.html">Cura do câncer</a>
+            </div>
+            <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+            <div id="tecnologiaNews" class="cathegory-news">
+                <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+                <a href="tecnologia2.html">Tecnologia na medcina</a>
+            </div>
+            <div style="margin-top: 5px;" class="divider"></div>
+            <a class="link" href="root/index.html">Versão original</a>
+        </div>
+    </div>
+    <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+                    alt="menu"></button>
+            <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+            <span class="menu-btn"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>Resumo da História do Cinema Brasileiro</h1>
+        <div class="divider"></div>
+        <p>No mundo, o cinema tem início em dezembro de 1895, na cidade de Paris. A película exibida foi Saída dos
+            Trabalhadores da Fábrica Lumière, dos irmãos Lumiére, o cinema brasileiro atravesou diversas, ocasiões onde
+            ouve a expansão do cinema no brasil, ouve também a retomada e o pós-retorno do cinema.</p>
+        <p>Inicialmente o cinema era mudo, e somente na década de 1930 surge o cinema falado.</p>
+        <figure>
+            <img draggable="false" src="img/selos.jpge" alt="Selos">
+            <figcaption>Homenagem ao Cinema brasilerio da época.</figcaption>
+        </figure>
+        <p>Em 1887, depois da estreia cinematográfica no país, surge a primeira sala de cinema aberta ao público na
+            capital carioca, por incentivo dos irmãos italianos Paschoal Segreto e Affonso Segreto.</p>
+        <p>Eles foram os pioneiros do cinema no <b>Brasil</b>, considerados os primeiros cineastas no país, uma vez que
+            realizaram gravações da Baía de Guanabara, em 1898.</p>
+        <p>No ano seguinte, Pachoal Segreto realizou uma filmagem na cidade de <b>São Paulo</b> durante a celebração da
+            unificação da Itália.</p>
+        <p>No entanto, foi somente no início do século XX, que <b>São Paulo</b> tem sua primeira sala de cinema, chamada
+            de Bijol Theatre.</p>
+        <figure>
+            <img draggable="false" src="img/cinema.jpge" alt="Cinema">
+            <figcaption>Theatre Bijol</figcaption>
+        </figure>
+        <p>Um dos problemas iniciais da produção do cinema no país era a falta de eletricidade, que somente foi
+            resolvida em 1907 com a implantação da Usina Ribeirão de Lages, no Rio de Janeiro.</p>
+        <p>Após esse evento, os números de salas cresceram consideravelmente na cidade do Rio de Janeiro, chegando a ter
+            cerca de 20 salas de exibição.</p>
+        <h2 class="section-title">Século XX e a Expansão do Cinema no Brasil</h2>
+        <p>No início, os filmes eram de caráter documental. Em 1908, o cineasta luso-brasileiro António Leal apresenta
+            sua película Os Estranguladores, considerado o primeiro filme de ficção brasileiro, com duração de 40
+            minutos.</p>
+        <p>Anos depois, em 1914, foi exibido o primeiro longa-metragem produzido no país pelo português Francisco Santos
+            intitulado O Crime dos Banhados, com mais de duas horas de duração.</p>
+        <p>Entretanto, após a Primeira Guerra Mundial (1914-1918), ocorre uma crise do cinema brasileiro, o qual fora
+            dominado por produções estadunidenses (cinema de Hollywood), enfraquecendo assim, o cinema nacional.</p>
+        <p>Por conseguinte, na década de 20 e 30 o cinema brasileiro atinge grande expansão com as publicações das
+            revistas de cinema Para Todos, Selecta e a Cinearte e ainda com produções que se espalham por vários cantos
+            do país denominado os ciclos regionais.</p>
+        <p>Foi na década de 30 que foi criado o primeiro grande estúdio cinematográfico no Brasil: a “Cinédia”.</p>
+        <p>As produções mais importantes dessa época foram: Limite (1931), de Mario Peixoto; A Voz do Carnaval (1933),
+            de Ademar Gonzaga e Humberto Mauro e Ganga Bruta (1933) de Humberto Mauro.</p>
+        <figure>
+            <img draggable="false" src="img/ganga.jpge" alt="Cena de Ganga Bruta">
+            <figcaption>Cena de Ganga Bruta</figcaption>
+        </figure>
+        <h2>Cinema de Retomada</h2>
+        <p>Assim, foi somente na segunda metade da década de 90 que o cinema ganha força, com a produção de novos
+            filmes. Esse período ficou conhecido como “Cinema de Retomada” depois de anos imersos na crise.</p>
+        <p>A partir disso, a produção de filmes cresce e são criados diversos festivais no país. É criada também a
+            Secretaria para o Desenvolvimento do Audiovisual, sendo implementada uma nova legislação, a “Lei do
+            Audiovisual”.</p>
+        <p>A partir de 1995, o cinema brasileiro começa a sair da crise com a produção do filme Carlota Joaquina,
+            Princesa do Brazil (1994) de Carla Camurati, o primeiro realizado pela Lei do Audiovisual.</p>
+        <p>Nessa década, merecem destaques as produções O Quatrilho (1995), de Fábio Barreto e O Que é Isso Companheiro?
+            (1997), de Bruno Barreto.</p>
+        <iframe class="embed" width="560" height="315" src="https://www.youtube.com/embed/JSWgOhRjJmo" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <h2 id="pós-retorno">Século XXI e a Pós-Retomada do Cinema</h2>
+        <p>No começo do século XXI, o cinema brasileiro adquire novamente reconhecimento no cenário mundial, com
+            diversos filmes indicados para festivais e Oscar.</p>
+        <p>Como exemplo, temos:Cidade de Deus (2002) de Fernando Meirelles; Carandiru (2003) de Hector Babenco; Tropa de
+            Elite (2007) de José Padilha; e Enquanto a Noite Não Chega (2009), de Beto Souza e Renato Falcão.</p>
+        <p>Em 2015, a produção Que horas ela volta?, de Anna Muylaert, também fez sucesso.</p>
+        <figure>
+            <img draggable="false" src="img/cidadededeus.jpge" alt="Grandes Filmes brasileiro">
+            <figcaption>Filmes famosos do Brasil</figcaption>
+        </figure>
+        <p>Com a introdução de novas tecnologias (3D, por exemplo), as produções e a quantidades de salas de cinema no
+            país crescem cada vez mais.</p>
+        <p>Alguns pesquisadores da área denominam o período como a pós retomada do cinema brasileiro, em que a indústria
+            cinematográfica do Brasil se consolida.</p>
+        <p class="source-text">Fonte: <a class="link"
+                href="https://www.todamateria.com.br/historia-do-cinema-brasileiro">todamateria.com.br</a>
+        </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

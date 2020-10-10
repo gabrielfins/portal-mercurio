@@ -1,0 +1,26 @@
+body{
+	margin:auto;
+	width: 1000px;
+	background: white;
+}
+figure{
+	background-color: #ADFF2F;
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 5px
+}
+img{
+	width: 900px;
+	height: 600px;
+}
+#conteudo{
+	background: #4EEE94;
+}
+p{
+	font-family: Didot, serif;
+	margin-left: px;
+	margin-right: 10px;
+}
+#topicos{
+	margin-left: 5px;
+}

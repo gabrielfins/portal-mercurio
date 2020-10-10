@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Portal Mercúrio</title>
+</head>
+
+<body>
+    <div id="sideNav" class="side-nav">
+        <div class="side-nav-content">
+            <a style="margin: 0;" class="link" href="index.html">Início</a>
+            <h3>Categorias</h3>
+            <div class="divider"></div>
+            <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
+            <div id="culturaNews" class="cathegory-news">
+                <a href="cultura1.html">30 anos de Rock in Rio</a>
+                <a href="cultura2.html">História do cinema brasileiro</a>
+            </div>
+            <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
+            <div id="economiaNews" class="cathegory-news">
+                <a href="economia1.html">Automação e desemprego</a>
+                <a href="economia2.html">Receita de senhoriagem</a>
+            </div>
+            <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
+            <div id="educacaoNews" class="cathegory-news">
+                <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+                <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+            </div>
+            <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
+            <div id="esportesNews" class="cathegory-news">
+                <a href="esporte1.html">Maracanã sem cadeiras</a>
+                <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+            </div>
+            <button data-target="internacionalNews" onclick="toggleCathegory()"
+                class="side-nav-btn">Internacional</button>
+            <div id="internacionalNews" class="cathegory-news">
+                <a href="internacional1.html">O céu vermelho da indonésia</a>
+                <a href="internacional2.html">Alemanha e reflorestamento</a>
+            </div>
+            <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
+            <div id="politicaNews" class="cathegory-news">
+                <a href="politica1.html">Bolsonaro na ONU</a>
+                <a href="politica2.html">Discussão no congresso</a>
+            </div>
+            <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
+            <div id="saudeNews" class="cathegory-news">
+                <a href="saude1.html">Inteligência artificial na saúde</a>
+                <a href="saude2.html">Cura do câncer</a>
+            </div>
+            <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
+            <div id="tecnologiaNews" class="cathegory-news">
+                <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+                <a href="tecnologia2.html">Tecnologia na medcina</a>
+            </div>
+            <div style="margin-top: 5px;" class="divider"></div>
+            <a class="link" href="root/index.html">Versão original</a>
+        </div>
+    </div>
+    <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+            <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+                    alt="menu"></button>
+            <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+            <span class="menu-btn"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <h1>Automação e Desemprego</h1>
+        <div class="divider"></div>
+        <figure>
+            <img draggable="false" src="img/img1.png" alt="Logo da Economia">
+            <figcaption>Humanos vs tecnologia</figcaption>
+        </figure>
+        <p>A automação crescente da produção e dos serviços tem sido motivo de muita preocupação nos últimos anos. O
+            medo é o de que a computadorização em particular,ou das inovações tecnológicas em geral desloque imensa
+            quantidade de mão-de-obra para as hostes dos desempregados. A estimativa, feita por Frey & Osborne (2013),
+            do Departamento de Engenharia Elétrica da Oxford University, de que 47% dos empregos nos EUA estariam em
+            risco por causa dos avanços computacionais (robôs e automação).</p>
+        <h2 class="section-title">Onde tudo começou?</h2>
+        <p>Essa onda alarmista, no entanto, é velha. No início do século 19, em plena Revolução Industrial,
+            trabalhadores do setor de tecelagem destruíram as máquinas em protesto à substituição técnica. O movimento
+            era liderado por uma personagem fictícia, Ned Ludd, criada pelos revoltosos para dar legitimidade ao
+            movimento, o Luddismo.</p>
+        <p>Embora a sensação de incerteza quanto ao futuro do trabalho em situação de avanços tecnológicos seja
+            compreensível, o que salta aos olhos é a incapacidade de enxergar o fenômeno sob as lentes da teoria
+            econômica. A tese popular é de que a automação destrói empregos e que, portanto, medidas protetivas devem
+            ser tomadas pelo Estado.Marchant et al (2014) propõem, por exemplo, entre outras coisas, reduzir a taxa de
+            inovação! O que diz, porém, a teoria econômica?</p>
+        <p>Suponhamos que uma inovação tecnológica no setor de têxteis não gere qualquer novo tipo de trabalho, digamos
+            o operador da máquina nova. Segue-se à introdução da máquina a demissão de João, que recebia $100 por
+            semana. Ele será deslocado, por exemplo, para um emprego no setor de manufaturas, que não fora preenchido
+            antes porque o custo de preenchê-los era alto. O benefício marginal de $91 de aumento de produto, por
+            semana, no setor de manufaturas não compensava o custo marginal de contratação de João, cujo custo de
+            oportunidade era $100. Porém, com a inovação no setor têxtil, o trabalho semanal de João passou a valer
+            menos para o setor, digamos $70.</p>
+        <p>João foi demitido, mas poderia ter permanecido no emprego se aceitasse o
+            salário de $70, com alguma redução de jornada. Ele, porém, não aceita o salário, pois sua oferta de trabalho
+            é dada pelo trade-off entre trabalho e lazer, um termo técnico da Economia para denotar tudo aquilo que o
+            trabalhador sacrifica quando opta pela ação de trabalhar. Ele aceitaria uma redução para $85, seu
+            salário-reserva, mas não $70. Se você acha isso estranho, lembre que trabalhadores do setor automotivo, em
+            momentos de crise, aceitam redução de jornada e salário para evitar a demissão. Quanto ao trade off,
+            pergunte a si mesmo, que ganha R$18.000 por mês como engenheiro e diretor de operações, se aceitaria uma
+            redução de salário para R$200. Certamente não. Há, portanto, algum salário que o deixa indiferente entre
+            trabalhar ou não.</p>
+        <p>Voltemos a João. Se ele aceitar $90 no setor manufatureiro, será contratado. De fato, vale
+            a pena para a empresa manufatureira contratar João, pois traz um lucro marginal de $1. Para João também,
+            pois $90 é mais que seu salário-reserva, $85. O erro de muitos é não entender quais são as verdadeiras
+            escolhas de João. O salário de $100 no setor têxtil não é mais uma alternativa. Sua escolha agora não é mais
+            entre $100 e $90, mas entre $85 e $90. Não mais entre emprego antigo e novo, mas entre emprego novo e lazer
+            (no sentido técnico). O problema é João e o empresário manufatureiro se encontrarem.</p>
+        <h2 class="section-title">Conclusão</h2>
+        <p>Portanto, mesmo que a inovação não gere um novo tipo de trabalho, ainda assim não é verdade que empregos são
+            destruídos. Pelo contrário, empregos sempre existem. A demora na transição para novos empregos se deve à
+            informação imperfeita, aos custos de busca e de transação, muitas vezes decorrência de restrições
+            institucionais, e aos custos de oportunidade, que são subjetivos. Algumas pessoas reclamam que empregados da
+            Disney recebem pouco e moram em motéis baratos, sendo que em cidades vizinhas há demanda por trabalho a
+            salários “dignos”. Por que esses empregados não se mudam de cidade em busca de novo emprego? Porque o custo
+            de mudança é um custo de transação que eles não estão dispostos a incorrer, talvez porque valorizem a
+            relação com turistas ou porque na outra cidade não há cursos de Economia. Coisas não têm custos: ações têm –
+            e quem age é o ser humano. O mercado é mediado essencialmente pelos custos de oportunidade dos seres humanos
+            na economia.</p>
+        <p class="source-text">Fonte: <a class="link"
+                href="https://economiadeservicos.com/2018/08/30/automacao-e-desemprego-aspectos-microeconomicos">economiadeservicos.com</a>
+        </p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
