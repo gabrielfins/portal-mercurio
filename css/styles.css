@@ -292,7 +292,7 @@ figcaption {
 }
 
 @media only screen and (max-width: 360px){
-  .cathegory-news a, .link {
+  .link {
     white-space: normal;
   }
 }
