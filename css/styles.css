@@ -133,12 +133,12 @@ button {
 }
 
 .link {
-  margin: 15px 0;
+  margin: 15px 0 0 0;
   white-space: nowrap;
 }
 
 .link-wrapper {
-  margin: 15px 0;
+  margin: 15px 0 0 0;
 }
 
 .cathegory-news a:hover, .link:hover, .link-wrapper:hover {
