@@ -78,14 +78,14 @@ button {
 
 .side-nav {
   visibility: collapse;
-  height: 100%;
+  height: calc(100% - 65px);
   width: 0;
   padding: 20px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   background-color: #ffffff;
   transition: all .3s;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .side-nav-content {
@@ -262,7 +262,7 @@ figcaption {
   }
 
   figure {
-    margin: 0;
+    margin: 40px 0;
   }
 
   figure img {
@@ -275,6 +275,10 @@ figcaption {
 }
 
 @media only screen and (max-width: 550px){
+  figure {
+    margin: 20px 0;
+  }
+
   .main-content {
     padding: 20px 30px 60px 30px;
   }
