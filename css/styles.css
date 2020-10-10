@@ -81,7 +81,7 @@ button {
   height: calc(100% - 65px);
   width: 0;
   padding: 20px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   background-color: #ffffff;
   transition: all .3s;
