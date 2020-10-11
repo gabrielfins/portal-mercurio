@@ -184,6 +184,10 @@ button {
   box-shadow: 0 0 10px 0 #777777;
 }
 
+.news-container:active {
+  background-color: #d0d0d0;
+}
+
 .news-img {
   height: 200px;
 }
