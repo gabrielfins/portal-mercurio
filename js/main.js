@@ -20,12 +20,14 @@ function toggleNavbar() {
       sideNav.style.width = '370px';
     }
     darkOverlay.style.visibility = 'visible';
+    darkOverlay.style.opacity = 1;
     document.body.style.overflow = 'hidden';
     toggleNav = !toggleNav;
   } else {
-    sideNav.style.visibility = 'collapse';
+    sideNav.style.visibility = 'hidden';
     sideNav.style.width = '0';
-    darkOverlay.style.visibility = 'collapse';
+    darkOverlay.style.visibility = 'hidden';
+    darkOverlay.style.opacity = 0;
     document.body.style.overflow = 'auto';
     toggleNav = !toggleNav;
   }
