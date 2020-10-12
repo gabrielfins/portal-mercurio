@@ -66,14 +66,20 @@ button {
 
 .logo {
   height: 65px;
+  padding: 0 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  transition: .15s;
 }
 
 .logo img {
   height: 57px;
+}
+
+.logo:hover {
+  background-color: #c47f0a;
 }
 
 .side-nav {
