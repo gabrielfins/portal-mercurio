@@ -1,6 +1,6 @@
 var toggleNav = false;
 
-window.onresize = function resize() {
+window.onresize = () => {
   if (toggleNav !== false) {
     if (window.innerWidth <= 370) {
       sideNav.style.width = '100%';
@@ -36,7 +36,7 @@ function toggleNavbar() {
 }
 
 function toggleCathegory(e) {
-  if ( !e ) e = window.event;
+  if (!e) e = window.event;
 
   let sender = e.target;
   let open = document.getElementById(sender.getAttribute('data-target'));
