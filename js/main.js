@@ -1,10 +1,12 @@
 var toggleNav = false;
 
 window.onresize = function resize() {
-  if (window.innerWidth <= 370) {
-    sideNav.style.width = '100%';
-  } else {
-    sideNav.style.width = '370px';
+  if (toggleNav !== false) {
+    if (window.innerWidth <= 370) {
+      sideNav.style.width = '100%';
+    } else {
+      sideNav.style.width = '370px';
+    }
   }
 }
 
