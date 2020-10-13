@@ -130,6 +130,7 @@ button {
   color: #f29f0f;
   font-weight: bold;
   text-decoration: none;
+  transition: .15s;
 }
 
 .cathegory-news a {
