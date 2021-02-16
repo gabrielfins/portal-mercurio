@@ -34,6 +34,7 @@ button {
   box-shadow: 0 1px 5px -1px #777777;
   position: fixed;
   top: 0;
+  z-index: 2;
 }
 
 .nav-wrapper {
@@ -87,7 +88,7 @@ button {
   width: 0;
   height: calc(100% - 65px);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: #ffffff;
   transition: all .3s;
   overflow-y: auto;
@@ -157,6 +158,7 @@ button {
   width: 100%;
   height: 100%;
   position: fixed;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
   transition: all .3s;
 }
@@ -190,10 +192,6 @@ button {
 
 .news-container:hover {
   box-shadow: 0 0 10px 0 #777777;
-}
-
-.news-container:active {
-  background-color: #d0d0d0;
 }
 
 .news-img {
@@ -252,6 +250,54 @@ figcaption {
   display: block;
   margin: 40px auto;
   width: 560px;
+}
+
+.ripple-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-effect .ripple {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.ripple-effect.ripples-light .ripple {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.ripple-effect.ripples-dark .ripple {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-animation: ripple 0.3s ease-out;
+          animation: ripple 0.3s ease-out;
+}
+
+@-webkit-keyframes ripple {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes ripple {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media only screen and (max-width: 1100px){
