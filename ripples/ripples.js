@@ -9,10 +9,10 @@ $(".ripple-effect").on("pointerdown", function(e) {
     circle.style.top = e.clientY - rect.top - radius + "px";
     circle.style.width = circle.style.height = radius * 2 + "px";
 
-    $(this).prepend(circle);
+    $(this).append(circle);
 });
 
-$(".ripple-effect").on("pointerup mouseleave dragleave touchleave touchend", function(e) {
+$(".ripple-effect").on("pointerup mouseleave dragleave touchend", function(e) {
     let ripple = $(this).find(".ripple");
     if (ripple.lenght != 0) {
         ripple.css("opacity", "0");
