@@ -1,5 +1,5 @@
-$(".ripple-effect").on("mousedown touchstart", function(e) {
-    var rect = this.getBoundingClientRect();
+$(".ripple-effect").on("pointerdown", function(e) {
+    let rect = this.getBoundingClientRect();
     let radius = findFurthestPoint(e.clientX, this.offsetWidth, rect.left, e.clientY, this.offsetHeight, rect.top);
 
     let circle =  document.createElement("span");
@@ -12,7 +12,7 @@ $(".ripple-effect").on("mousedown touchstart", function(e) {
     $(this).prepend(circle);
 });
 
-$(".ripple-effect").on("mouseup mouseleave dragleave touchend", function() {
+$(".ripple-effect").on("pointerup mouseleave dragleave touchend", function(e) {
     let ripple = $(this).find(".ripple");
     if (ripple.lenght != 0) {
         ripple.css("opacity", "0");
