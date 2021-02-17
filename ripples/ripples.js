@@ -2,7 +2,7 @@ $(".ripple-effect").on("pointerdown", function(e) {
     let rect = this.getBoundingClientRect();
     let radius = findFurthestPoint(e.clientX, this.offsetWidth, rect.left, e.clientY, this.offsetHeight, rect.top);
 
-    let circle =  document.createElement("span");
+    let circle =  document.createElement("div");
     circle.classList.add("ripple");
 
     circle.style.left = e.clientX - rect.left - radius + "px";
