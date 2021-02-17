@@ -12,7 +12,7 @@ $(".ripple-effect").on("pointerdown", function(e) {
     $(this).prepend(circle);
 });
 
-$(".ripple-effect").on("pointerup mouseleave dragleave touchend", function(e) {
+$(".ripple-effect").on("pointerup mouseleave dragleave touchleave touchend", function(e) {
     let ripple = $(this).find(".ripple");
     if (ripple.lenght != 0) {
         ripple.css("opacity", "0");
