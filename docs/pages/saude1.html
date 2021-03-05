@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="../ripples/ripples.js"></script>
+  <title>Portal Mercúrio</title>
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn ripple-effect ripples-dark"><img draggable="false" src="../img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo ripple-effect ripples-dark" href="../index.html"><img draggable="false" src="../img/logo.svg" alt="logo"></a>
+      <span class="menu-icon"></span>
+    </div>
+  </nav>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="../index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Cultura</button>
+      <div id="culturaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="cultura1.html">30 anos de Rock in Rio</a>
+          <a href="cultura2.html">História do cinema brasileiro</a>
+        </div>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Economia</button>
+      <div id="economiaNews" class="category-news-container">
+        <div class="category-news">   
+          <a href="economia1.html">Automação e desemprego</a>
+          <a href="economia2.html">Receita de senhoriagem</a>
+        </div>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Educação</button>
+      <div id="educacaoNews" class="category-news-container">
+        <div class="category-news">
+          <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+          <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+        </div>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Esportes</button>
+      <div id="esportesNews" class="category-news-container">
+        <div class="category-news">
+          <a href="esporte1.html">Maracanã sem cadeiras</a>
+          <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+        </div>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Internacional</button>
+      <div id="internacionalNews" class="category-news-container">
+        <div class="category-news">
+          <a href="internacional1.html">Céu vermelho na indonésia</a>
+          <a href="internacional2.html">Alemanha e reflorestamento</a>
+        </div>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Política</button>
+      <div id="politicaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="politica1.html">Bolsonaro na ONU</a>
+          <a href="politica2.html">Discussão no congresso</a>
+        </div>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Saúde</button>
+      <div id="saudeNews" class="category-news-container">
+        <div class="category-news">
+          <a href="saude1.html">Inteligência artificial na saúde</a>
+          <a href="saude2.html">Cura do câncer</a>
+        </div>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Tecnologia</button>
+      <div id="tecnologiaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+          <a href="tecnologia2.html">Tecnologia na medcina</a>
+        </div>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="../original-version/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <div class="main-content">
+    <h1>Como a inteligência artificial pode melhorar nossa saúde</h1>
+    <div class="divider"></div>
+    <figure>
+      <img draggable="false" src="../img/computador.jpg" alt="IA">
+    </figure>
+    <p>A inteligência artificial, muitas vezes citada apenas como IA, é, por definição, a área da ciência da computação
+      que surgiu com o intuito de levar para as máquinas a capacidade de aprendizagem do ser humano. Ela faz parte do
+      avanço tecnológico que vem permitindo a sistemas em diferentes campos de atuação detectarem problemas e tomarem
+      decisões com base em extensos bancos de dados.</p>
+    <p>O termo “inteligência artificial” foi usado pela primeira vez em
+      1956 pelo cientista da computação americano John McCarthy. Hoje o mundo já conhece robôs e computadores que
+      conseguem interagir com as pessoas e apresentam ampla capacidade
+      de aprendizado.</p>
+    <p>Um bom exemplo é Sophia, robô criada em Hong Kong por David Hanson e projetada para adaptar-se ao
+      comportamento humano. Sophia ficou tão popular que já foi capa de revista e ganhou título de cidadã do mundo,
+      concedido pelo reino da Arábia Saudita. Ela até já discursou na ONU — seu vídeo falando sobre o futuro e
+      desenvolvimento sustentável já teve mais de 2 milhões de acessos nas redes sociais.</p>
+    <p>Há quem considere assustador ver um robô tão parecido com o ser humano. Mas, ficções científicas à parte, o fato
+      é que a inteligência artificial vem trazendo resultados e perspectivas
+      animadoras para o mundo, particularmente na medicina.</p>
+    <p>Hoje já é possível lançar mão da IA para amplificar a prevenção de doenças e aprimorar diagnósticos e tratamentos
+      em diversas condições de saúde. De acordo com um estudo publicado na revista científica Nature em 2018, robôs já
+      dispõem de um significativo poder de previsão para guiar condutas dentro do ambiente hospitalar.</p>
+    <p>Utilizando um sistema do Google, pesquisadores alimentaram um modelo computacional de aprendizado com diversos
+      dados de
+      pacientes de dois hospitais americanos. Como resultado, o robô conseguia prever o tempo que um paciente ocuparia o
+      leito, quando receberia alta e até mesmo a hora em que iria morrer.</p>
+    <p class="source-text">Fonte: <a target="_blank" class="link-wrapper"
+        href="https://saude.abril.com.br/blog/com-a-palavra/como-a-inteligencia-artificial-pode-melhorar-nossa-saude/">saude.abril.com.br</a>
+    </p>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

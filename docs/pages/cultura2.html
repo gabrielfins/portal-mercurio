@@ -4,71 +4,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="../ripples/ripples.js"></script>
     <title>Portal Mercúrio</title>
 </head>
-
 <body>
-    <div id="sideNav" class="side-nav">
-        <div class="side-nav-content">
-            <a style="margin: 0;" class="link" href="index.html">Início</a>
-            <h3>Categorias</h3>
-            <div class="divider"></div>
-            <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
-            <div id="culturaNews" class="cathegory-news">
-                <a href="cultura1.html">30 anos de Rock in Rio</a>
-                <a href="cultura2.html">História do cinema brasileiro</a>
-            </div>
-            <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
-            <div id="economiaNews" class="cathegory-news">
-                <a href="economia1.html">Automação e desemprego</a>
-                <a href="economia2.html">Receita de senhoriagem</a>
-            </div>
-            <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
-            <div id="educacaoNews" class="cathegory-news">
-                <a href="educacao1.html">UFRJ - Vestibular 2020</a>
-                <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
-            </div>
-            <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
-            <div id="esportesNews" class="cathegory-news">
-                <a href="esporte1.html">Maracanã sem cadeiras</a>
-                <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
-            </div>
-            <button data-target="internacionalNews" onclick="toggleCathegory()"
-                class="side-nav-btn">Internacional</button>
-            <div id="internacionalNews" class="cathegory-news">
-                <a href="internacional1.html">O céu vermelho da indonésia</a>
-                <a href="internacional2.html">Alemanha e reflorestamento</a>
-            </div>
-            <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
-            <div id="politicaNews" class="cathegory-news">
-                <a href="politica1.html">Bolsonaro na ONU</a>
-                <a href="politica2.html">Discussão no congresso</a>
-            </div>
-            <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
-            <div id="saudeNews" class="cathegory-news">
-                <a href="saude1.html">Inteligência artificial na saúde</a>
-                <a href="saude2.html">Cura do câncer</a>
-            </div>
-            <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
-            <div id="tecnologiaNews" class="cathegory-news">
-                <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
-                <a href="tecnologia2.html">Tecnologia na medcina</a>
-            </div>
-            <div style="margin-top: 5px;" class="divider"></div>
-            <a class="link" href="root/index.html">Versão original</a>
-        </div>
-    </div>
-    <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
     <nav class="nav-bar">
         <div class="nav-wrapper">
-            <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
-                    alt="menu"></button>
-            <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
-            <span class="menu-icon"></span>
+          <button onclick="toggleNavbar()" class="menu-btn ripple-effect ripples-dark"><img draggable="false" src="../img/menu-icon.svg"
+              alt="menu"></button>
+          <a class="logo ripple-effect ripples-dark" href="../index.html"><img draggable="false" src="../img/logo.svg" alt="logo"></a>
+          <span class="menu-icon"></span>
         </div>
-    </nav>
+      </nav>
+      <div id="sideNav" class="side-nav">
+        <div class="side-nav-content">
+          <a style="margin: 0;" class="link" href="../index.html">Início</a>
+          <h3>Categorias</h3>
+          <div class="divider"></div>
+          <button data-target="culturaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Cultura</button>
+          <div id="culturaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="cultura1.html">30 anos de Rock in Rio</a>
+              <a href="cultura2.html">História do cinema brasileiro</a>
+            </div>
+          </div>
+          <button data-target="economiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Economia</button>
+          <div id="economiaNews" class="category-news-container">
+            <div class="category-news">   
+              <a href="economia1.html">Automação e desemprego</a>
+              <a href="economia2.html">Receita de senhoriagem</a>
+            </div>
+          </div>
+          <button data-target="educacaoNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Educação</button>
+          <div id="educacaoNews" class="category-news-container">
+            <div class="category-news">
+              <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+              <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+            </div>
+          </div>
+          <button data-target="esportesNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Esportes</button>
+          <div id="esportesNews" class="category-news-container">
+            <div class="category-news">
+              <a href="esporte1.html">Maracanã sem cadeiras</a>
+              <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+            </div>
+          </div>
+          <button data-target="internacionalNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Internacional</button>
+          <div id="internacionalNews" class="category-news-container">
+            <div class="category-news">
+              <a href="internacional1.html">Céu vermelho na indonésia</a>
+              <a href="internacional2.html">Alemanha e reflorestamento</a>
+            </div>
+          </div>
+          <button data-target="politicaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Política</button>
+          <div id="politicaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="politica1.html">Bolsonaro na ONU</a>
+              <a href="politica2.html">Discussão no congresso</a>
+            </div>
+          </div>
+          <button data-target="saudeNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Saúde</button>
+          <div id="saudeNews" class="category-news-container">
+            <div class="category-news">
+              <a href="saude1.html">Inteligência artificial na saúde</a>
+              <a href="saude2.html">Cura do câncer</a>
+            </div>
+          </div>
+          <button data-target="tecnologiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Tecnologia</button>
+          <div id="tecnologiaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+              <a href="tecnologia2.html">Tecnologia na medcina</a>
+            </div>
+          </div>
+          <div style="margin-top: 5px;" class="divider"></div>
+          <a class="link" href="../original-version/index.html">Versão original</a>
+        </div>
+      </div>
+    <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
     <div class="main-content">
         <h1>Resumo da História do Cinema Brasileiro</h1>
         <div class="divider"></div>
@@ -77,7 +92,7 @@
             ouve a expansão do cinema no brasil, ouve também a retomada e o pós-retorno do cinema.</p>
         <p>Inicialmente o cinema era mudo, e somente na década de 1930 surge o cinema falado.</p>
         <figure>
-            <img draggable="false" src="img/selos.jpge" alt="Selos">
+            <img draggable="false" src="../img/selos.jpge" alt="Selos">
             <figcaption>Homenagem ao Cinema brasilerio da época.</figcaption>
         </figure>
         <p>Em 1887, depois da estreia cinematográfica no país, surge a primeira sala de cinema aberta ao público na
@@ -89,7 +104,7 @@
         <p>No entanto, foi somente no início do século XX, que <b>São Paulo</b> tem sua primeira sala de cinema, chamada
             de Bijol Theatre.</p>
         <figure>
-            <img draggable="false" src="img/cinema.jpge" alt="Cinema">
+            <img draggable="false" src="../img/cinema.jpge" alt="Cinema">
             <figcaption>Theatre Bijol</figcaption>
         </figure>
         <p>Um dos problemas iniciais da produção do cinema no país era a falta de eletricidade, que somente foi
@@ -111,7 +126,7 @@
         <p>As produções mais importantes dessa época foram: Limite (1931), de Mario Peixoto; A Voz do Carnaval (1933),
             de Ademar Gonzaga e Humberto Mauro e Ganga Bruta (1933) de Humberto Mauro.</p>
         <figure>
-            <img draggable="false" src="img/ganga.jpge" alt="Cena de Ganga Bruta">
+            <img draggable="false" src="../img/ganga.jpge" alt="Cena de Ganga Bruta">
             <figcaption>Cena de Ganga Bruta</figcaption>
         </figure>
         <h2>Cinema de Retomada</h2>
@@ -134,7 +149,7 @@
             Elite (2007) de José Padilha; e Enquanto a Noite Não Chega (2009), de Beto Souza e Renato Falcão.</p>
         <p>Em 2015, a produção Que horas ela volta?, de Anna Muylaert, também fez sucesso.</p>
         <figure>
-            <img draggable="false" src="img/cidadededeus.jpge" alt="Grandes Filmes brasileiro">
+            <img draggable="false" src="../img/cidadededeus.jpge" alt="Grandes Filmes brasileiro">
             <figcaption>Filmes famosos do Brasil</figcaption>
         </figure>
         <p>Com a introdução de novas tecnologias (3D, por exemplo), as produções e a quantidades de salas de cinema no
@@ -145,7 +160,6 @@
                 href="https://www.todamateria.com.br/historia-do-cinema-brasileiro">todamateria.com.br</a>
         </p>
     </div>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
-
 </html>

@@ -35,21 +35,21 @@ function toggleNavbar() {
   }
 }
 
-function toggleCathegory(e) {
+function toggleCategory(e) {
   if (!e) e = window.event;
 
   let sender = e.target;
   let open = document.getElementById(sender.getAttribute('data-target'));
 
-  if (open.style.display === 'flex') {
-    open.style.display = 'none';
+  if (open.style.height === '78px') {
+    open.style.height = '0';
     sender.classList.remove('side-nav-btn-selected');
   } else {
     let buttons = document.getElementsByClassName('side-nav-btn');
-    let closed = document.getElementsByClassName('cathegory-news');
+    let closed = document.getElementsByClassName('category-news-container');
 
     for (let i = 0; i < closed.length; i++) {
-      closed.item(i).style.display = 'none';
+      closed.item(i).style.height = '0';
     }
 
     for (let i = 0; i < buttons.length; i++) {
@@ -57,6 +57,6 @@ function toggleCathegory(e) {
     }
 
     sender.classList.add('side-nav-btn-selected');
-    open.style.display = 'flex';
+    open.style.height = '78px';
   }
 }

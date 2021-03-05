@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #FFFFFF;
 }
 
 a, button, p, h1, h2, h3, h4, h5, h6 {
@@ -104,6 +104,10 @@ button {
   margin: 20px;
 }
 
+.side-nav-content h3 {
+  margin: 15px 0;
+}
+
 .side-nav-btn {
   font-size: 16px;
   margin-top: 5px;
@@ -111,6 +115,7 @@ button {
   padding: 10px;
   background-color: transparent;
   border-radius: 5px;
+  transition: .2s;
 }
 
 .side-nav-btn:hover {
@@ -122,22 +127,28 @@ button {
   box-shadow: 0 0 6px 0 #a3a3a3;
 }
 
-.cathegory-news {
+.category-news-container {
   width: 100%;
-  display: none;
-  flex-direction: column;
-  padding: 10px;
-  margin-left: 15px;
+  height: 0;
+  margin-left: 10px;
+  overflow: hidden;
+  transition: .15s;
 }
 
-.cathegory-news a, .link, .link-wrapper {
+.category-news {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-news a, .link, .link-wrapper {
   color: #f29f0f;
   font-weight: bold;
   text-decoration: none;
   transition: .15s;
 }
 
-.cathegory-news a {
+.category-news a {
   margin: 5px 0;
   white-space: nowrap;
 }
@@ -151,7 +162,7 @@ button {
   margin: 15px 0 0 0;
 }
 
-.cathegory-news a:hover, .link:hover, .link-wrapper:hover {
+.category-news a:hover, .link:hover, .link-wrapper:hover {
   color: #c26700;
 }
 
@@ -207,7 +218,7 @@ button {
   margin-left: 30px;
 }
 
-.news-cathegory {
+.news-category {
   margin: 0 0 15px 0;
 }
 

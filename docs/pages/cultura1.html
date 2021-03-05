@@ -4,70 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="../ripples/ripples.js"></script>
   <title>Portal Mercúrio</title>
 </head>
-
 <body>
-  <div id="sideNav" class="side-nav">
-    <div class="side-nav-content">
-      <a style="margin: 0;" class="link" href="index.html">Início</a>
-      <h3>Categorias</h3>
-      <div class="divider"></div>
-      <button data-target="culturaNews" onclick="toggleCathegory()" class="side-nav-btn">Cultura</button>
-      <div id="culturaNews" class="cathegory-news">
-        <a href="cultura1.html">30 anos de Rock in Rio</a>
-        <a href="cultura2.html">História do cinema brasileiro</a>
-      </div>
-      <button data-target="economiaNews" onclick="toggleCathegory()" class="side-nav-btn">Economia</button>
-      <div id="economiaNews" class="cathegory-news">
-        <a href="economia1.html">Automação e desemprego</a>
-        <a href="economia2.html">Receita de senhoriagem</a>
-      </div>
-      <button data-target="educacaoNews" onclick="toggleCathegory()" class="side-nav-btn">Educação</button>
-      <div id="educacaoNews" class="cathegory-news">
-        <a href="educacao1.html">UFRJ - Vestibular 2020</a>
-        <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
-      </div>
-      <button data-target="esportesNews" onclick="toggleCathegory()" class="side-nav-btn">Esportes</button>
-      <div id="esportesNews" class="cathegory-news">
-        <a href="esporte1.html">Maracanã sem cadeiras</a>
-        <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
-      </div>
-      <button data-target="internacionalNews" onclick="toggleCathegory()" class="side-nav-btn">Internacional</button>
-      <div id="internacionalNews" class="cathegory-news">
-        <a href="internacional1.html">O céu vermelho da indonésia</a>
-        <a href="internacional2.html">Alemanha e reflorestamento</a>
-      </div>
-      <button data-target="politicaNews" onclick="toggleCathegory()" class="side-nav-btn">Política</button>
-      <div id="politicaNews" class="cathegory-news">
-        <a href="politica1.html">Bolsonaro na ONU</a>
-        <a href="politica2.html">Discussão no congresso</a>
-      </div>
-      <button data-target="saudeNews" onclick="toggleCathegory()" class="side-nav-btn">Saúde</button>
-      <div id="saudeNews" class="cathegory-news">
-        <a href="saude1.html">Inteligência artificial na saúde</a>
-        <a href="saude2.html">Cura do câncer</a>
-      </div>
-      <button data-target="tecnologiaNews" onclick="toggleCathegory()" class="side-nav-btn">Tecnologia</button>
-      <div id="tecnologiaNews" class="cathegory-news">
-        <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
-        <a href="tecnologia2.html">Tecnologia na medcina</a>
-      </div>
-      <div style="margin-top: 5px;" class="divider"></div>
-      <a class="link" href="root/index.html">Versão original</a>
-    </div>
-  </div>
-  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
   <nav class="nav-bar">
     <div class="nav-wrapper">
-      <button onclick="toggleNavbar()" class="menu-btn"><img draggable="false" src="img/menu-icon.svg"
+      <button onclick="toggleNavbar()" class="menu-btn ripple-effect ripples-dark"><img draggable="false" src="../img/menu-icon.svg"
           alt="menu"></button>
-      <a class="logo" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <a class="logo ripple-effect ripples-dark" href="../index.html"><img draggable="false" src="../img/logo.svg" alt="logo"></a>
       <span class="menu-icon"></span>
     </div>
   </nav>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="../index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Cultura</button>
+      <div id="culturaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="cultura1.html">30 anos de Rock in Rio</a>
+          <a href="cultura2.html">História do cinema brasileiro</a>
+        </div>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Economia</button>
+      <div id="economiaNews" class="category-news-container">
+        <div class="category-news">   
+          <a href="economia1.html">Automação e desemprego</a>
+          <a href="economia2.html">Receita de senhoriagem</a>
+        </div>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Educação</button>
+      <div id="educacaoNews" class="category-news-container">
+        <div class="category-news">
+          <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+          <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+        </div>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Esportes</button>
+      <div id="esportesNews" class="category-news-container">
+        <div class="category-news">
+          <a href="esporte1.html">Maracanã sem cadeiras</a>
+          <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+        </div>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Internacional</button>
+      <div id="internacionalNews" class="category-news-container">
+        <div class="category-news">
+          <a href="internacional1.html">Céu vermelho na indonésia</a>
+          <a href="internacional2.html">Alemanha e reflorestamento</a>
+        </div>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Política</button>
+      <div id="politicaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="politica1.html">Bolsonaro na ONU</a>
+          <a href="politica2.html">Discussão no congresso</a>
+        </div>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Saúde</button>
+      <div id="saudeNews" class="category-news-container">
+        <div class="category-news">
+          <a href="saude1.html">Inteligência artificial na saúde</a>
+          <a href="saude2.html">Cura do câncer</a>
+        </div>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Tecnologia</button>
+      <div id="tecnologiaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+          <a href="tecnologia2.html">Tecnologia na medcina</a>
+        </div>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="../original-version/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
   <div class="main-content">
     <h1>30 Anos de Rock in Rio</h1>
     <div class="divider"></div>
@@ -96,7 +112,7 @@
       (uma referência à canção Two minutes to midnight) e fez um dos shows mais históricos da banda e do festival, com a
       presença do Eddie, o monstro de estimação do grupo.</p>
     <figure>
-      <img draggable="false" src="img/rock-in-rio.jpg" alt="Primeiro Rock in Rio">
+      <img draggable="false" src="../img/rock-in-rio.jpg" alt="Primeiro Rock in Rio">
       <figcaption>Primeiro Rock in Rio</figcaption>
     </figure>
     <h2>O início de tudo</h2>
@@ -117,14 +133,13 @@
       batismo nos trópicos. “Foi mágico, aquele foi um dos nossos maiores shows. Lembro de voar de helicóptero em volta
       do Corcovado, uma maravilha”, lembrou a cantora <i>Kate Pierson</i>.</p>
     <figure>
-      <img draggable="false" src="img/artistas.jpg" alt="Artistas">
+      <img draggable="false" src="../img/artistas.jpg" alt="Artistas">
       <figcaption>Artistas</figcaption>
     </figure>
     <p>Fonte: <a target="_blank" class="link-wrapper"
         href="https://infograficos.estadao.com.br/especiais/rock-in-rio-30-anos">infograficos.estadao.com.br</a>
     </p>
   </div>
-  <script src="js/main.js"></script>
+  <script src="../js/main.js"></script>
 </body>
-
 </html>

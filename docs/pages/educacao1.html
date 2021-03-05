@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="../ripples/ripples.js"></script>
+    <title>Portal Mercúrio</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-wrapper">
+          <button onclick="toggleNavbar()" class="menu-btn ripple-effect ripples-dark"><img draggable="false" src="../img/menu-icon.svg"
+              alt="menu"></button>
+          <a class="logo ripple-effect ripples-dark" href="../index.html"><img draggable="false" src="../img/logo.svg" alt="logo"></a>
+          <span class="menu-icon"></span>
+        </div>
+      </nav>
+      <div id="sideNav" class="side-nav">
+        <div class="side-nav-content">
+          <a style="margin: 0;" class="link" href="../index.html">Início</a>
+          <h3>Categorias</h3>
+          <div class="divider"></div>
+          <button data-target="culturaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Cultura</button>
+          <div id="culturaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="cultura1.html">30 anos de Rock in Rio</a>
+              <a href="cultura2.html">História do cinema brasileiro</a>
+            </div>
+          </div>
+          <button data-target="economiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Economia</button>
+          <div id="economiaNews" class="category-news-container">
+            <div class="category-news">   
+              <a href="economia1.html">Automação e desemprego</a>
+              <a href="economia2.html">Receita de senhoriagem</a>
+            </div>
+          </div>
+          <button data-target="educacaoNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Educação</button>
+          <div id="educacaoNews" class="category-news-container">
+            <div class="category-news">
+              <a href="educacao1.html">UFRJ - Vestibular 2020</a>
+              <a href="educacao2.html">UCLA - Estudos sobre a bondade</a>
+            </div>
+          </div>
+          <button data-target="esportesNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Esportes</button>
+          <div id="esportesNews" class="category-news-container">
+            <div class="category-news">
+              <a href="esporte1.html">Maracanã sem cadeiras</a>
+              <a href="esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+            </div>
+          </div>
+          <button data-target="internacionalNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Internacional</button>
+          <div id="internacionalNews" class="category-news-container">
+            <div class="category-news">
+              <a href="internacional1.html">Céu vermelho na indonésia</a>
+              <a href="internacional2.html">Alemanha e reflorestamento</a>
+            </div>
+          </div>
+          <button data-target="politicaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Política</button>
+          <div id="politicaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="politica1.html">Bolsonaro na ONU</a>
+              <a href="politica2.html">Discussão no congresso</a>
+            </div>
+          </div>
+          <button data-target="saudeNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Saúde</button>
+          <div id="saudeNews" class="category-news-container">
+            <div class="category-news">
+              <a href="saude1.html">Inteligência artificial na saúde</a>
+              <a href="saude2.html">Cura do câncer</a>
+            </div>
+          </div>
+          <button data-target="tecnologiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Tecnologia</button>
+          <div id="tecnologiaNews" class="category-news-container">
+            <div class="category-news">
+              <a href="tecnologia1.html">Data de lançamento do iPhone 11</a>
+              <a href="tecnologia2.html">Tecnologia na medcina</a>
+            </div>
+          </div>
+          <div style="margin-top: 5px;" class="divider"></div>
+          <a class="link" href="../original-version/index.html">Versão original</a>
+        </div>
+      </div>
+      <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+    <div class="main-content">
+        <h1>UFRJ adia testes de habilidades específicas de vestibular de 2020 por falta de recursos financeiros</h1>
+        <div class="divider"></div>
+        <figure>
+            <img draggable="false" src="../img/ufrj.jpg"
+                alt="Universidade Federal do Rio de Janeiro - Foto: Reprodução/Flávio Vinícius">
+            <figcaption>Universidade Federal do Rio de Janeiro</figcapition>
+        </figure>
+        <p>A Universidade Federal do Rio de Janeiro (UFRJ) anunciou, nesta terça-feira (24), o adiamento por tempo
+            indeterminado da realização do Teste de Verificação de Habilidade Específica (THE) e do de Conhecimento
+            Específico (TCE) do vestibular 2020.
+            O motivo é falta de recursos financeiros, segundo a instituição. Cerca de 1,8 mil candidatos fazem o exame.
+        </p>
+        <p>O THE é obrigatório para o ingresso em sete cursos da universidade: Arquitetura e Urbanismo, Composição de
+            Interior, Composição Paisagística, Comunicação Visual Design, Desenho Industrial – Projeto de Produto, Dança
+            e Música. O TCE é necessário para o curso de Letras com habilitação em Libras.
+            O período de realização das provas seria de 6 a 27 de outubro deste ano.
+            Segundo a UFRJ, para que o teste aconteça, é necessário R$240 mil.
+            Em nota, a universidade alertou que “os 1.673 candidatos do THE e os 178 do TCE devem acompanhar no site do
+            <a target="_blank" class="link-wrapper" href="https://acessograduacao.ufrj.br/"> Acesso à Graduação </a> as
+            informações
+            acerca das
+            novas datas,
+            que dependerão diretamente da disponibilidade orçamentária”.</p>
+        <h2 class="section-title">Cortes</h2>
+        <p>No início deste mês, a <a target="_blank" class="link-wrapper"
+                href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/09/09/ufrj-pode-ter-aulas-e-hospitais-paralisados-devido-a-falta-de-verba.ghtml">
+                UFRJ suspendeu serviços de manutenção</a> por conta do corte de quase metade dos recursos financeiros da
+            instituição feito pelo Ministério da Educação.
+            O <a target="_blank" class="link-wrapper"
+                href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/09/04/ufrj-anuncia-racionamento-de-servicos-por-conta-de-bloqueios-no-orcamento.ghtml">racionamento
+                de serviços</a> é por conta de <a target="_blank" class="link-wrapper"
+                href="https://g1.globo.com/economia/noticia/2019/07/30/governo-edita-decreto-orcamentario-maiores-bloqueios-sao-em-cidadania-e-educacao.ghtml">bloqueios
+                no orçamento</a>.
+            Em agosto, a <a target="_blank" class="link-wrapper"
+                href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/08/05/ufrj-pode-interromper-atividades-ainda-este-mes-diz-reitora.ghtml">universidade
+                já dava sinais que poderia interromper atividades</a>, como cirurgias no Hospital Universitário
+            Clementino Fraga Filho, no Fundão.</p>
+        <p class="source-text">Fonte: <a target="_blank" class="link-wrapper"
+                href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/09/24/ufrj-adia-testes-de-habilidades-especificas-de-vestibular-de-2020-por-falta-de-recursos-financeiros.ghtml">g1.globo.com</a>
+        </p>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

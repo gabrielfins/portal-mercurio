@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="ripples/ripples.js"></script>
+  <title>Portal Mercúrio</title>
+</head>
+<body>
+  <nav class="nav-bar">
+    <div class="nav-wrapper">
+      <button onclick="toggleNavbar()" class="menu-btn ripple-effect ripples-dark"><img draggable="false" src="img/menu-icon.svg"
+          alt="menu"></button>
+      <a class="logo ripple-effect ripples-dark" href="index.html"><img draggable="false" src="img/logo.svg" alt="logo"></a>
+      <span class="menu-icon"></span>
+    </div>
+  </nav>
+  <div id="sideNav" class="side-nav">
+    <div class="side-nav-content">
+      <a style="margin: 0;" class="link" href="index.html">Início</a>
+      <h3>Categorias</h3>
+      <div class="divider"></div>
+      <button data-target="culturaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Cultura</button>
+      <div id="culturaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/cultura1.html">30 anos de Rock in Rio</a>
+          <a href="pages/cultura2.html">História do cinema brasileiro</a>
+        </div>
+      </div>
+      <button data-target="economiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Economia</button>
+      <div id="economiaNews" class="category-news-container">
+        <div class="category-news">   
+          <a href="pages/economia1.html">Automação e desemprego</a>
+          <a href="pages/economia2.html">Receita de senhoriagem</a>
+        </div>
+      </div>
+      <button data-target="educacaoNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Educação</button>
+      <div id="educacaoNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/educacao1.html">UFRJ - Vestibular 2020</a>
+          <a href="pages/educacao2.html">UCLA - Estudos sobre a bondade</a>
+        </div>
+      </div>
+      <button data-target="esportesNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Esportes</button>
+      <div id="esportesNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/esporte1.html">Maracanã sem cadeiras</a>
+          <a href="pages/esporte2.html">Brasileiros nas Olimpíadas de 2020</a>
+        </div>
+      </div>
+      <button data-target="internacionalNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Internacional</button>
+      <div id="internacionalNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/internacional1.html">Céu vermelho na indonésia</a>
+          <a href="pages/internacional2.html">Alemanha e reflorestamento</a>
+        </div>
+      </div>
+      <button data-target="politicaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Política</button>
+      <div id="politicaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/politica1.html">Bolsonaro na ONU</a>
+          <a href="pages/politica2.html">Discussão no congresso</a>
+        </div>
+      </div>
+      <button data-target="saudeNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Saúde</button>
+      <div id="saudeNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/saude1.html">Inteligência artificial na saúde</a>
+          <a href="pages/saude2.html">Cura do câncer</a>
+        </div>
+      </div>
+      <button data-target="tecnologiaNews" onclick="toggleCategory()" class="side-nav-btn ripple-effect ripples-dark">Tecnologia</button>
+      <div id="tecnologiaNews" class="category-news-container">
+        <div class="category-news">
+          <a href="pages/tecnologia1.html">Data de lançamento do iPhone 11</a>
+          <a href="pages/tecnologia2.html">Tecnologia na medcina</a>
+        </div>
+      </div>
+      <div style="margin-top: 5px;" class="divider"></div>
+      <a class="link" href="original-version/index.html">Versão original</a>
+    </div>
+  </div>
+  <div id="darkOverlay" onclick="toggleNavbar()" class="dark-overlay"></div>
+  <div class="main-content">
+    <h1>Notícias em destaque</h1>
+    <div class="divider"></div>
+    <div class="news">
+      <a class="news-container ripple-effect ripples-dark" href="pages/tecnologia1.html">
+        <img class="news-img" draggable="false" src="img/tech-iphone-11.png">
+        <div class="news-info">
+          <p class="news-category">Tecnologia</p>
+          <h2 class="news-title">iPhone 11: Apple confirma data de lançamento para o Brasil</h3>
+            <p class="news-description">A Apple confirmou a data de lançamento dos iPhones 11, 11 Pro e 11 Pro Max para
+              o mercado brasileiro.</p>
+        </div>
+      </a>
+      <a class="news-container ripple-effect ripples-dark" href="pages/politica1.html">
+        <img class="news-img" draggable="false" src="img/politica-bolsonaro.png">
+        <div class="news-info">
+          <p class="news-category">Política</p>
+          <h2 class="news-title">Discurso de Bolsonaro na ONU</h3>
+            <p class="news-description">O presidente Jair Bolsonaro fez seu primeiro discurso de abertura na Assembleia
+              Geral da ONU nesta terça-feira (24).</p>
+        </div>
+      </a>
+      <a class="news-container ripple-effect ripples-dark" href="pages/cultura1.html">
+        <img class="news-img" draggable="false" src="img/cultura-rock-in-rio.png">
+        <div class="news-info">
+          <p class="news-category">Cultura</p>
+          <h2 class="news-title">30 anos de Rock in Rio</h3>
+            <p class="news-description">Entre 11 e 20 de janeiro de 1985, num terreno alagadiço de 250 mil metros
+              quadrados em Jacarepaguá (o equivalente a 12 Maracanãs) , no Rio de Janeiro, cerca de 1,4 milhão de
+              pessoas viram aquele que seria o maior festival de rock do País até hoje.</p>
+        </div>
+      </a>
+      <a class="news-container ripple-effect ripples-dark" href="pages/internacional1.html">
+        <img class="news-img" draggable="false" src="img/internacional-indonesia.png">
+        <div class="news-info">
+          <p class="news-category">Internacional</p>
+          <h2 class="news-title">Queimadas deixam céu vermelho na Indonésia</h3>
+            <p class="news-description">O céu ficou vermelho sobre uma Província da Indonésia neste fim de semana,
+              devido a incêndios florestais que se espalharam em grande parte do país.</p>
+        </div>
+      </a>
+      <a class="news-container ripple-effect ripples-dark" href="pages/economia1.html">
+        <img class="news-img" draggable="false" src="img/economia-automacao.png">
+        <div class="news-info">
+          <p class="news-category">Economia</p>
+          <h2 class="news-title">Automação e desemprego</h3>
+            <p class="news-description">A automação crescente da produção e dos serviços tem sido motivo de muita
+              preocupação nos últimos anos.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
